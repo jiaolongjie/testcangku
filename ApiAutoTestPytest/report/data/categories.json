@@ -1,0 +1,91 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_changjing_02",
+        "uid" : "a1de548a4c0d4378",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270379818,
+          "stop" : 1610270379890,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_erJi[getData1]",
+        "uid" : "c8e61311cab2ae60",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270380041,
+          "stop" : 1610270380060,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'erJi', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': None, 'data': {'csid': '1', 'page': '100'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '当前page存在问题'}}" ]
+      }, {
+        "name" : "test_erJi[getData2]",
+        "uid" : "5c83611930909f38",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270380074,
+          "stop" : 1610270380095,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'erJi', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': None, 'data': {'csid': '100', 'page': '1'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '当前csid存在问题'}}" ]
+      }, {
+        "name" : "test_erJi[getData3]",
+        "uid" : "3519d0d4ebf16bf1",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270380107,
+          "stop" : 1610270380120,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'erJi', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': None, 'data': {'csid': '1', 'page': ''}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': 'page为必填'}}" ]
+      }, {
+        "name" : "test_erJi[getData4]",
+        "uid" : "a4c4852a1b584059",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270380132,
+          "stop" : 1610270380146,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'erJi', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': None, 'data': {'csid': 'a', 'page': 'y'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '参数类型错误'}}" ]
+      }, {
+        "name" : "test_login[getData3]",
+        "uid" : "44d543f65b6f5c96",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1610270380261,
+          "stop" : 1610270380337,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'login', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mlogin', 'headers': None, 'params': None, 'data': {'username': 'fealgfuajisao', 'password': '123'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '用户名不存在'}}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

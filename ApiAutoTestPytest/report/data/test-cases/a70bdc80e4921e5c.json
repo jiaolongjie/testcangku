@@ -1,0 +1,193 @@
+{
+  "uid" : "a70bdc80e4921e5c",
+  "name" : "test_login[getData0]",
+  "fullName" : "testcases.test_login.TestLogin#test_login",
+  "historyId" : "fb23a10cd76a507d585e7130f49e563f",
+  "time" : {
+    "start" : 1610078543562,
+    "stop" : 1610078543932,
+    "duration" : 370
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1610078543562,
+      "stop" : 1610078543562,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1610078543923,
+        "stop" : 1610078543926,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1f8fec0bb98f79b1",
+        "name" : "请求路径",
+        "source" : "1f8fec0bb98f79b1.attach",
+        "type" : "text/plain",
+        "size" : 37
+      }, {
+        "uid" : "785d818bb41ca540",
+        "name" : "请求方式",
+        "source" : "785d818bb41ca540.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "c224ac4c5e394bad",
+        "name" : "请求头",
+        "source" : "c224ac4c5e394bad.attach",
+        "type" : "text/plain",
+        "size" : 198
+      }, {
+        "uid" : "6b66fe267d67583f",
+        "name" : "请求体",
+        "source" : "6b66fe267d67583f.attach",
+        "type" : "text/plain",
+        "size" : 28
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "获取响应",
+      "time" : {
+        "start" : 1610078543926,
+        "stop" : 1610078543929,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c8af0eaf4d98aae3",
+        "name" : "响应状态码",
+        "source" : "c8af0eaf4d98aae3.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "5450834419f1f22a",
+        "name" : "响应头",
+        "source" : "5450834419f1f22a.attach",
+        "type" : "text/plain",
+        "size" : 262
+      }, {
+        "uid" : "5c198b233756e7ac",
+        "name" : "响应文本内容",
+        "source" : "5c198b233756e7ac.attach",
+        "type" : "text/plain",
+        "size" : 182
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1610078543930,
+        "stop" : 1610078543932,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3e1250add75eb0b8",
+        "name" : "预期响应状态码",
+        "source" : "3e1250add75eb0b8.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "9bc031c0eb0b8941",
+        "name" : "预期返回错误码",
+        "source" : "9bc031c0eb0b8941.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "565240afb0a5102a",
+        "name" : "预期返回错误信息",
+        "source" : "565240afb0a5102a.attach",
+        "type" : "text/plain",
+        "size" : 7
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "feature",
+    "value" : "用户"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HLLR26H"
+  }, {
+    "name" : "thread",
+    "value" : "29972-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "getData",
+    "value" : "{'name': 'login', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mlogin', 'headers': None, 'params': None, 'data': {'username': 'wangwu', 'password': '123'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '200', 'msg': 'success'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a70bdc80e4921e5c.json",
+  "parameterValues" : [ "{'name': 'login', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mlogin', 'headers': None, 'params': None, 'data': {'username': 'wangwu', 'password': '123'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '200', 'msg': 'success'}}" ]
+}

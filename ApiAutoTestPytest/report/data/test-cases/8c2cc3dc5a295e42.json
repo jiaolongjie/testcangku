@@ -1,0 +1,318 @@
+{
+  "uid" : "8c2cc3dc5a295e42",
+  "name" : "test_changjing_01",
+  "fullName" : "testcases.test_changjing.TestChangJing#test_changjing_01",
+  "historyId" : "6bfcef5370fae256aa03fac08695e433",
+  "time" : {
+    "start" : 1610270197054,
+    "stop" : 1610270197235,
+    "duration" : 181
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_changjing.TestChangJing object at 0x0000025F7C60C308>\n\n    @allure.story('场景测试02')\n    def test_changjing_01(self):\n        ru = RequestUtil()\n        cjru = ChangJingRequestUtil('changjing_02', ru)\n>       cjru.yamlAndRequest()\n\n..\\testcases\\test_changjing.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\util\\changJingRequestUtil.py:66: in yamlAndRequest\n    self.requestUtil.assertResult(result, dict['validate']['statusCode'], dict['validate']['errorCode'],dict['validate']['msg'])\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x0000025F7C60CD48>\nresult = <Response [200]>, statusCode = 200, errorCode = 400, msg = '用户名已存在'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n            assert result.status_code == int(statusCode)\n>           assert result.json()['status'] == int(errorCode)\nE           AssertionError\n\n..\\util\\requestUtil.py:61: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_changjing.TestChangJing object at 0x0000025F7C60C308>\n\n    @allure.story('场景测试02')\n    def test_changjing_01(self):\n        ru = RequestUtil()\n        cjru = ChangJingRequestUtil('changjing_02', ru)\n>       cjru.yamlAndRequest()\n\n..\\testcases\\test_changjing.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\util\\changJingRequestUtil.py:66: in yamlAndRequest\n    self.requestUtil.assertResult(result, dict['validate']['statusCode'], dict['validate']['errorCode'],dict['validate']['msg'])\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x0000025F7C60CD48>\nresult = <Response [200]>, statusCode = 200, errorCode = 400, msg = '用户名已存在'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n            assert result.status_code == int(statusCode)\n>           assert result.json()['status'] == int(errorCode)\nE           AssertionError\n\n..\\util\\requestUtil.py:61: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求:mcheckImg",
+      "time" : {
+        "start" : 1610270197060,
+        "stop" : 1610270197182,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "发送请求",
+        "time" : {
+          "start" : 1610270197078,
+          "stop" : 1610270197105,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "7a1ec73ffa2c6d01",
+          "name" : "请求路径",
+          "source" : "7a1ec73ffa2c6d01.attach",
+          "type" : "text/plain",
+          "size" : 40
+        }, {
+          "uid" : "5b5dd3ebdaedef60",
+          "name" : "请求方式",
+          "source" : "5b5dd3ebdaedef60.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "9f91e02ab13cd1d4",
+          "name" : "请求头",
+          "source" : "9f91e02ab13cd1d4.attach",
+          "type" : "text/plain",
+          "size" : 121
+        }, {
+          "uid" : "972a14605b335abe",
+          "name" : "请求体",
+          "source" : "972a14605b335abe.attach",
+          "type" : "text/plain",
+          "size" : 4
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 4
+      }, {
+        "name" : "获取响应",
+        "time" : {
+          "start" : 1610270197105,
+          "stop" : 1610270197131,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "338c17cb8e79d904",
+          "name" : "响应状态码",
+          "source" : "338c17cb8e79d904.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "754b052a9a8dec5a",
+          "name" : "响应头",
+          "source" : "754b052a9a8dec5a.attach",
+          "type" : "text/plain",
+          "size" : 262
+        }, {
+          "uid" : "73676462e2f1dfd3",
+          "name" : "响应文本内容",
+          "source" : "73676462e2f1dfd3.attach",
+          "type" : "text/plain",
+          "size" : 53
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "断言",
+        "time" : {
+          "start" : 1610270197131,
+          "stop" : 1610270197142,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c97fc20aa07c7ded",
+          "name" : "预期响应状态码",
+          "source" : "c97fc20aa07c7ded.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "db1c1f9a2e3ec8a9",
+          "name" : "预期返回错误码",
+          "source" : "db1c1f9a2e3ec8a9.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "45c2c4d32950b46a",
+          "name" : "预期返回错误信息",
+          "source" : "45c2c4d32950b46a.attach",
+          "type" : "text/plain",
+          "size" : 7
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 10
+    }, {
+      "name" : "发送请求:mregist",
+      "time" : {
+        "start" : 1610270197182,
+        "stop" : 1610270197234,
+        "duration" : 52
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"D:\\PycharmProjects\\ApiAutoTestPytest\\util\\changJingRequestUtil.py\", line 66, in yamlAndRequest\n    self.requestUtil.assertResult(result, dict['validate']['statusCode'], dict['validate']['errorCode'],dict['validate']['msg'])\n  File \"D:\\PycharmProjects\\ApiAutoTestPytest\\util\\requestUtil.py\", line 61, in assertResult\n    assert result.json()['status'] == int(errorCode)\n",
+      "steps" : [ {
+        "name" : "发送请求",
+        "time" : {
+          "start" : 1610270197213,
+          "stop" : 1610270197228,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "8b980c3688d94fe5",
+          "name" : "请求路径",
+          "source" : "8b980c3688d94fe5.attach",
+          "type" : "text/plain",
+          "size" : 38
+        }, {
+          "uid" : "a20dd6b0f6a16caa",
+          "name" : "请求方式",
+          "source" : "a20dd6b0f6a16caa.attach",
+          "type" : "text/plain",
+          "size" : 4
+        }, {
+          "uid" : "18e3f9ece0bd8aee",
+          "name" : "请求头",
+          "source" : "18e3f9ece0bd8aee.attach",
+          "type" : "text/plain",
+          "size" : 277
+        }, {
+          "uid" : "867fbb7a63bec15f",
+          "name" : "请求体",
+          "source" : "867fbb7a63bec15f.attach",
+          "type" : "text/plain",
+          "size" : 71
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 4
+      }, {
+        "name" : "获取响应",
+        "time" : {
+          "start" : 1610270197228,
+          "stop" : 1610270197229,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b4bd96103c394626",
+          "name" : "响应状态码",
+          "source" : "b4bd96103c394626.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "5b57e18668877360",
+          "name" : "响应头",
+          "source" : "5b57e18668877360.attach",
+          "type" : "text/plain",
+          "size" : 179
+        }, {
+          "uid" : "1dc4b9700bba96f3",
+          "name" : "响应文本内容",
+          "source" : "1dc4b9700bba96f3.attach",
+          "type" : "text/plain",
+          "size" : 59
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 3
+      }, {
+        "name" : "断言",
+        "time" : {
+          "start" : 1610270197229,
+          "stop" : 1610270197234,
+          "duration" : 5
+        },
+        "status" : "failed",
+        "statusMessage" : "AssertionError\n",
+        "statusTrace" : "  File \"D:\\PycharmProjects\\ApiAutoTestPytest\\util\\requestUtil.py\", line 61, in assertResult\n    assert result.json()['status'] == int(errorCode)\n",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6511960bbbee0236",
+          "name" : "预期响应状态码",
+          "source" : "6511960bbbee0236.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "a4d423c6260e8eef",
+          "name" : "预期返回错误码",
+          "source" : "a4d423c6260e8eef.attach",
+          "type" : "text/plain",
+          "size" : 3
+        }, {
+          "uid" : "7a7412b24175aea4",
+          "name" : "预期返回错误信息",
+          "source" : "7a7412b24175aea4.attach",
+          "type" : "text/plain",
+          "size" : 18
+        } ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "attachmentsCount" : 3
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 10
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 8,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 20
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "场景测试02"
+  }, {
+    "name" : "feature",
+    "value" : "场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_changjing"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestChangJing"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HLLR26H"
+  }, {
+    "name" : "thread",
+    "value" : "58156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_changjing"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8c2cc3dc5a295e42.json",
+  "parameterValues" : [ ]
+}

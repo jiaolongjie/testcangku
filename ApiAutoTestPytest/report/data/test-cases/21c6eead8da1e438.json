@@ -1,0 +1,199 @@
+{
+  "uid" : "21c6eead8da1e438",
+  "name" : "test_login[getData3]",
+  "fullName" : "testcases.test_login.TestLogin#test_login",
+  "historyId" : "86caba06811d746cf89ece1410ed87c2",
+  "time" : {
+    "start" : 1610270300991,
+    "stop" : 1610270301011,
+    "duration" : 20
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_login.TestLogin object at 0x00000203EEEBF308>\ngetData = {'data': {'password': '123', 'username': 'fealgfuajisao'}, 'headers': None, 'json': None, 'method': 'POST', ...}\n\n    @allure.story('登录接口')\n    def test_login(self,getData):\n        # 发送请求\n        result = ru.doRequest(method=getData['method'], url=getData['url'], params=getData['params'],data=getData['data'], json=getData['json'], headers=getData['headers'])\n    \n>       ru.assertResult(result, getData['validate']['statusCode'], getData['validate']['errorCode'],getData['validate']['msg'])\n\n..\\testcases\\test_login.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x00000203EEE95688>\nresult = <Response [200]>, statusCode = '200', errorCode = '400', msg = '用户名不存在'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n            assert result.status_code == int(statusCode)\n            assert result.json()['status'] == int(errorCode)\n>           assert result.json()['msg'] == msg\nE           AssertionError\n\n..\\util\\requestUtil.py:62: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1610270300991,
+      "stop" : 1610270300991,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_login.TestLogin object at 0x00000203EEEBF308>\ngetData = {'data': {'password': '123', 'username': 'fealgfuajisao'}, 'headers': None, 'json': None, 'method': 'POST', ...}\n\n    @allure.story('登录接口')\n    def test_login(self,getData):\n        # 发送请求\n        result = ru.doRequest(method=getData['method'], url=getData['url'], params=getData['params'],data=getData['data'], json=getData['json'], headers=getData['headers'])\n    \n>       ru.assertResult(result, getData['validate']['statusCode'], getData['validate']['errorCode'],getData['validate']['msg'])\n\n..\\testcases\\test_login.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x00000203EEE95688>\nresult = <Response [200]>, statusCode = '200', errorCode = '400', msg = '用户名不存在'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n            assert result.status_code == int(statusCode)\n            assert result.json()['status'] == int(errorCode)\n>           assert result.json()['msg'] == msg\nE           AssertionError\n\n..\\util\\requestUtil.py:62: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1610270301004,
+        "stop" : 1610270301007,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "888af6feadc78feb",
+        "name" : "请求路径",
+        "source" : "888af6feadc78feb.attach",
+        "type" : "text/plain",
+        "size" : 37
+      }, {
+        "uid" : "deb02c70742b8c2c",
+        "name" : "请求方式",
+        "source" : "deb02c70742b8c2c.attach",
+        "type" : "text/plain",
+        "size" : 4
+      }, {
+        "uid" : "e5cca62f4b6b1f54",
+        "name" : "请求头",
+        "source" : "e5cca62f4b6b1f54.attach",
+        "type" : "text/plain",
+        "size" : 198
+      }, {
+        "uid" : "a32f6124ba92b8a0",
+        "name" : "请求体",
+        "source" : "a32f6124ba92b8a0.attach",
+        "type" : "text/plain",
+        "size" : 35
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "获取响应",
+      "time" : {
+        "start" : 1610270301007,
+        "stop" : 1610270301009,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c6839bafe1177fd",
+        "name" : "响应状态码",
+        "source" : "7c6839bafe1177fd.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "386ef2b289cf9e5b",
+        "name" : "响应头",
+        "source" : "386ef2b289cf9e5b.attach",
+        "type" : "text/plain",
+        "size" : 262
+      }, {
+        "uid" : "2e6a14587ebfd116",
+        "name" : "响应文本内容",
+        "source" : "2e6a14587ebfd116.attach",
+        "type" : "text/plain",
+        "size" : 77
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1610270301009,
+        "stop" : 1610270301011,
+        "duration" : 2
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"D:\\PycharmProjects\\ApiAutoTestPytest\\util\\requestUtil.py\", line 62, in assertResult\n    assert result.json()['msg'] == msg\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a6de7eec062f296d",
+        "name" : "预期响应状态码",
+        "source" : "a6de7eec062f296d.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "9c78e1c016b93851",
+        "name" : "预期返回错误码",
+        "source" : "9c78e1c016b93851.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "ee577e242d311a2",
+        "name" : "预期返回错误信息",
+        "source" : "ee577e242d311a2.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "用户"
+  }, {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HLLR26H"
+  }, {
+    "name" : "thread",
+    "value" : "59016-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "getData",
+    "value" : "{'name': 'login', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mlogin', 'headers': None, 'params': None, 'data': {'username': 'fealgfuajisao', 'password': '123'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '用户名不存在'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21c6eead8da1e438.json",
+  "parameterValues" : [ "{'name': 'login', 'method': 'POST', 'url': 'http://192.168.1.165:8081/shop/mlogin', 'headers': None, 'params': None, 'data': {'username': 'fealgfuajisao', 'password': '123'}, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '用户名不存在'}}" ]
+}

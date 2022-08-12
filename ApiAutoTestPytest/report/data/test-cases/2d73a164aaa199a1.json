@@ -1,0 +1,199 @@
+{
+  "uid" : "2d73a164aaa199a1",
+  "name" : "test_erJi[getData4]",
+  "fullName" : "testcases.test_erJi.TestErJi#test_erJi",
+  "historyId" : "5be90402c160aeaca01c71c14980a6f3",
+  "time" : {
+    "start" : 1610078870718,
+    "stop" : 1610078870737,
+    "duration" : 19
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <test_erJi.TestErJi object at 0x000002AC88F688C8>\ngetData = {'data': None, 'headers': None, 'json': None, 'method': 'GET', ...}\n\n    @allure.story('二级分页接口')\n    def test_erJi(self,getData):\n        # 发送请求\n        result = ru.doRequest(method=getData['method'],url=getData['url'],params=getData['params'],data=getData['data'],json=getData['json'],headers=getData['headers'])\n    \n>       ru.assertResult(result,getData['validate']['statusCode'],getData['validate']['errorCode'],getData['validate']['msg'])\n\n..\\testcases\\test_erJi.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x000002AC88303408>\nresult = <Response [400]>, statusCode = '200', errorCode = '400', msg = '参数类型错误'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n>           assert result.status_code == int(statusCode)\nE           AssertionError\n\n..\\util\\requestUtil.py:60: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "getData",
+    "time" : {
+      "start" : 1610078870717,
+      "stop" : 1610078870717,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <test_erJi.TestErJi object at 0x000002AC88F688C8>\ngetData = {'data': None, 'headers': None, 'json': None, 'method': 'GET', ...}\n\n    @allure.story('二级分页接口')\n    def test_erJi(self,getData):\n        # 发送请求\n        result = ru.doRequest(method=getData['method'],url=getData['url'],params=getData['params'],data=getData['data'],json=getData['json'],headers=getData['headers'])\n    \n>       ru.assertResult(result,getData['validate']['statusCode'],getData['validate']['errorCode'],getData['validate']['msg'])\n\n..\\testcases\\test_erJi.py:24: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <util.requestUtil.RequestUtil object at 0x000002AC88303408>\nresult = <Response [400]>, statusCode = '200', errorCode = '400', msg = '参数类型错误'\n\n    def assertResult(self, result, statusCode, errorCode, msg):\n        with allure.step('发送请求'):\n            allure.attach(str(result.request.url),'请求路径')\n            allure.attach(str(result.request.method),'请求方式')\n            allure.attach(str(result.request.headers),'请求头')\n            allure.attach(str(result.request.body),'请求体')\n    \n        with allure.step('获取响应'):\n            allure.attach(str(result.status_code),'响应状态码')\n            allure.attach(str(result.headers),'响应头')\n            allure.attach(str(result.text),'响应文本内容')\n    \n        with allure.step('断言'):\n            allure.attach(str(statusCode),'预期响应状态码')\n            allure.attach(str(errorCode),'预期返回错误码')\n            allure.attach(str(msg),'预期返回错误信息')\n    \n>           assert result.status_code == int(statusCode)\nE           AssertionError\n\n..\\util\\requestUtil.py:60: AssertionError",
+    "steps" : [ {
+      "name" : "发送请求",
+      "time" : {
+        "start" : 1610078870729,
+        "stop" : 1610078870732,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "62fcdc9b7c7f1b22",
+        "name" : "请求路径",
+        "source" : "62fcdc9b7c7f1b22.attach",
+        "type" : "text/plain",
+        "size" : 60
+      }, {
+        "uid" : "38ff30166cdfdfc",
+        "name" : "请求方式",
+        "source" : "38ff30166cdfdfc.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "bbfd011a6ed7f05b",
+        "name" : "请求头",
+        "source" : "bbfd011a6ed7f05b.attach",
+        "type" : "text/plain",
+        "size" : 121
+      }, {
+        "uid" : "24edb61845d4d4d",
+        "name" : "请求体",
+        "source" : "24edb61845d4d4d.attach",
+        "type" : "text/plain",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 4
+    }, {
+      "name" : "获取响应",
+      "time" : {
+        "start" : 1610078870732,
+        "stop" : 1610078870734,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7dbdebc54362db42",
+        "name" : "响应状态码",
+        "source" : "7dbdebc54362db42.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "6764faf4b31bd192",
+        "name" : "响应头",
+        "source" : "6764faf4b31bd192.attach",
+        "type" : "text/plain",
+        "size" : 161
+      }, {
+        "uid" : "f0efc696e3d56d09",
+        "name" : "响应文本内容",
+        "source" : "f0efc696e3d56d09.attach",
+        "type" : "text/html",
+        "size" : 737
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 3
+    }, {
+      "name" : "断言",
+      "time" : {
+        "start" : 1610078870734,
+        "stop" : 1610078870736,
+        "duration" : 2
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError\n",
+      "statusTrace" : "  File \"D:\\PycharmProjects\\ApiAutoTestPytest\\util\\requestUtil.py\", line 60, in assertResult\n    assert result.status_code == int(statusCode)\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d9a453247aa45ac1",
+        "name" : "预期响应状态码",
+        "source" : "d9a453247aa45ac1.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "bc30dc52e22ed886",
+        "name" : "预期返回错误码",
+        "source" : "bc30dc52e22ed886.attach",
+        "type" : "text/plain",
+        "size" : 3
+      }, {
+        "uid" : "e485adb7b727065d",
+        "name" : "预期返回错误信息",
+        "source" : "e485adb7b727065d.attach",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 3
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "二级分页接口"
+  }, {
+    "name" : "feature",
+    "value" : "商品信息"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_erJi"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestErJi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-HLLR26H"
+  }, {
+    "name" : "thread",
+    "value" : "30388-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.test_erJi"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "getData",
+    "value" : "{'name': 'erJi', 'method': 'GET', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': {'csid': 'a', 'page': 'y'}, 'data': None, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '参数类型错误'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d73a164aaa199a1.json",
+  "parameterValues" : [ "{'name': 'erJi', 'method': 'GET', 'url': 'http://192.168.1.165:8081/shop/mfindByPageCsid', 'headers': None, 'params': {'csid': 'a', 'page': 'y'}, 'data': None, 'json': None, 'validate': {'statusCode': '200', 'errorCode': '400', 'msg': '参数类型错误'}}" ]
+}

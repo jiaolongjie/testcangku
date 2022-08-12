@@ -1,0 +1,111 @@
+[ {
+  "uid" : "c8e61311cab2ae60",
+  "name" : "test_erJi[getData1]",
+  "time" : {
+    "start" : 1610270380041,
+    "stop" : 1610270380060,
+    "duration" : 19
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3519d0d4ebf16bf1",
+  "name" : "test_erJi[getData3]",
+  "time" : {
+    "start" : 1610270380107,
+    "stop" : 1610270380120,
+    "duration" : 13
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1de548a4c0d4378",
+  "name" : "test_changjing_02",
+  "time" : {
+    "start" : 1610270379818,
+    "stop" : 1610270379890,
+    "duration" : 72
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "448db9d24031191c",
+  "name" : "test_login[getData2]",
+  "time" : {
+    "start" : 1610270380228,
+    "stop" : 1610270380254,
+    "duration" : 26
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8160e818fe2bac0",
+  "name" : "test_login[getData1]",
+  "time" : {
+    "start" : 1610270380182,
+    "stop" : 1610270380221,
+    "duration" : 39
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44d543f65b6f5c96",
+  "name" : "test_login[getData3]",
+  "time" : {
+    "start" : 1610270380261,
+    "stop" : 1610270380337,
+    "duration" : 76
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a11dca5037aa5a6c",
+  "name" : "test_login[getData0]",
+  "time" : {
+    "start" : 1610270380162,
+    "stop" : 1610270380178,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4c4852a1b584059",
+  "name" : "test_erJi[getData4]",
+  "time" : {
+    "start" : 1610270380132,
+    "stop" : 1610270380146,
+    "duration" : 14
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "f496db3eb82a9f6f",
+  "name" : "test_changjing_01",
+  "time" : {
+    "start" : 1610270379717,
+    "stop" : 1610270379813,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c83611930909f38",
+  "name" : "test_erJi[getData2]",
+  "time" : {
+    "start" : 1610270380074,
+    "stop" : 1610270380095,
+    "duration" : 21
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d53ac2b2b88754e",
+  "name" : "test_erJi[getData0]",
+  "time" : {
+    "start" : 1610270379984,
+    "stop" : 1610270380037,
+    "duration" : 53
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

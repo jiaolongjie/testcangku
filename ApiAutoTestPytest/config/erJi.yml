@@ -1,0 +1,13 @@
+name: erJi
+method: POST
+url: /shop/mfindByPageCsid
+headers: ~
+params: ~
+data:
+ csid: ~
+ page: ~
+json: ~
+validate:
+ statusCode: ~
+ errorCode: ~
+ msg: ~
